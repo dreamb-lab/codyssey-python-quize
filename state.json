@@ -1,0 +1,55 @@
+{
+    "quizzes": [
+        {
+            "question": "Python의 창시자는 누구인가요?",
+            "choices": [
+                "귀도 반 로섬",
+                "리누스 토르발스",
+                "제임스 고슬링",
+                "데니스 리치"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "다음 중 파이썬의 기본 데이터 타입이 아닌 것은?",
+            "choices": [
+                "int",
+                "str",
+                "array",
+                "dict"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "파이썬에서 함수를 정의할 때 사용하는 키워드는?",
+            "choices": [
+                "func",
+                "define",
+                "def",
+                "function"
+            ],
+            "answer": 3
+        },
+        {
+            "question": "다음 중 참(True)과 거짓(False)을 나타내는 데이터 타입은?",
+            "choices": [
+                "bool",
+                "float",
+                "char",
+                "tuple"
+            ],
+            "answer": 1
+        },
+        {
+            "question": "깃(Git)에서 원격 저장소의 내용을 가져와 로컬에 합치는 명령어는?",
+            "choices": [
+                "git push",
+                "git pull",
+                "git commit",
+                "git init"
+            ],
+            "answer": 2
+        }
+    ],
+    "best_score": 0
+}
