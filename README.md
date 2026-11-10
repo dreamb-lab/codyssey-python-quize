@@ -1,2 +1,12 @@
-# codyssey-python-quize
-Python console quize game project
+# 🎯 나만의 파이썬 퀴즈 게임 (Python Quiz Game)
+
+## 1. 프로젝트 개요
+Python과 Git을 활용하여 터미널 환경에서 동작하는 콘솔 기반 퀴즈 게임입니다. 객체 지향 프로그래밍(OOP) 원리를 적용하고, JSON 파일을 이용한 데이터 영속성을 구현했습니다.
+
+## 2. 퀴즈 주제 선정 이유
+- 흥미롭고 직관적인 퀴즈를 통해 사용자가 가볍게 즐기면서도 프로그래밍 기초 로직을 검증할 수 있도록 제작했습니다.
+
+## 3. 실행 방법
+터미널에 아래 명령어를 입력하여 실행합니다.
+```bash
+python main.py
