@@ -29,3 +29,6 @@ python main.py
 
 ## 6. 데이터 저장
 퀴즈와 최고 점수는 프로젝트 폴더의 `state.json` 파일에 JSON 형식으로 저장됩니다. 프로그램을 종료한 뒤 다시 실행해도 데이터가 유지됩니다.
+## Clone Test
+
+This section was added in the cloned repository to practice Git commit, push, and pull operations.
