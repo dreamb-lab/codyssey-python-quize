@@ -75,6 +75,15 @@ class QuizGame:
                 self.save_data()
                 raise SystemExit
                 
+    def get_text_input(self, prompt):
+        """문자 입력 및 종료 예외 처리"""
+        try:
+            return input(prompt).strip()
+        except (KeyboardInterrupt, EOFError):
+            print("\n👋 입력이 중단되어 프로그램을 종료합니다.")
+            self.save_data()
+            raise SystemExit
+
     def play_quiz(self):
         """퀴즈 풀기 기능"""
         if not self.quizzes:
@@ -103,7 +112,7 @@ class QuizGame:
         """퀴즈 추가 기능"""
         print("\n📌 새로운 퀴즈 추가")
         while True:
-            question = input("문제 입력: ").strip()
+            question = self.get_text_input("문제 입력: ")
             if question:
                 break
             print("⚠️ 문제를 비워둘 수 없습니다.")
@@ -111,7 +120,7 @@ class QuizGame:
         choices = []
         for i in range(1, 5):
             while True:
-                choice = input(f"선택지 {i}: ").strip()
+                choice = self.get_text_input(f"선택지 {i}: ")
                 if choice:
                     choices.append(choice)
                     break
