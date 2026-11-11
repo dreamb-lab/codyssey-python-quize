@@ -56,17 +56,25 @@ class QuizGame:
         self.best_score = 0
 
     def get_validated_input(self, prompt, min_val, max_val):
-        """숫자 입력 예외 처리 (잘못 입력해도 프로그램이 안 뻗게 방지)"""
+        """숫자 입력 및 예외 처리"""
         while True:
             try:
                 user_input = input(prompt).strip()
                 value = int(user_input)
+
                 if min_val <= value <= max_val:
                     return value
+
                 print(f"⚠️ {min_val}~{max_val} 사이의 숫자를 입력해주세요.")
+
             except ValueError:
                 print("⚠️ 숫자만 입력해주세요.")
 
+            except (KeyboardInterrupt, EOFError):
+                print("\n👋 입력이 중단되어 프로그램을 종료합니다.")
+                self.save_data()
+                raise SystemExit
+                
     def play_quiz(self):
         """퀴즈 풀기 기능"""
         if not self.quizzes:

@@ -49,6 +49,16 @@
                 "git init"
             ],
             "answer": 2
+        },
+        {
+            "question": "파이썬 파일의 확장자는 무엇인가요?",
+            "choices": [
+                ".py",
+                ".exe",
+                ".txt",
+                ".html"
+            ],
+            "answer": 1
         }
     ],
     "best_score": 0
