@@ -98,15 +98,26 @@ class QuizGame:
         if score > self.best_score:
             self.best_score = score
             print("🎉 새로운 최고 점수 달성!")
-            self.save_data()
-
+            self.save_data()    
     def add_quiz(self):
         """퀴즈 추가 기능"""
         print("\n📌 새로운 퀴즈 추가")
-        question = input("문제 입력: ").strip()
-        choices = [input(f"선택지 {i}: ").strip() for i in range(1, 5)]
+        while True:
+            question = input("문제 입력: ").strip()
+            if question:
+                break
+            print("⚠️ 문제를 비워둘 수 없습니다.")
+
+        choices = []
+        for i in range(1, 5):
+            while True:
+                choice = input(f"선택지 {i}: ").strip()
+                if choice:
+                    choices.append(choice)
+                    break
+                print("⚠️ 선택지를 비워둘 수 없습니다.")
+
         answer = self.get_validated_input("정답 번호 (1-4): ", 1, 4)
-        
         self.quizzes.append(Quiz(question, choices, answer))
         self.save_data()
         print("✅ 퀴즈가 추가되었습니다!")

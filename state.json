@@ -59,6 +59,16 @@
                 ".html"
             ],
             "answer": 1
+        },
+        {
+            "question": "파이썬에서 파일 확장자는 무엇인가요?",
+            "choices": [
+                ".py",
+                ".exe",
+                ".txt",
+                ".html"
+            ],
+            "answer": 1
         }
     ],
     "best_score": 0
