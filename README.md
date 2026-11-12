@@ -211,12 +211,22 @@ git init
 git add .
 git commit -m "커밋 메시지"
 git branch
-git checkout -b 브랜치명
+git switch -c 브랜치명
+git switch main
+git merge 브랜치명
 git push
 git pull
 git log --oneline
 ```
+**브랜치와 병합**
 
+브랜치(Branch)는 기존 작업에 영향을 주지 않고 별도의 공간에서 기능을 개발할 수 있도록 해줍니다.
+
+- `main`: 프로젝트의 기본 브랜치
+- `feature/quiz-play`: 퀴즈 기능 관련 작업 브랜치
+- `feature/merge-practice`: 브랜치 생성 및 병합 실습을 위한 브랜치
+
+작업이 완료되면 변경 사항을 커밋하고 `main` 브랜치에 병합하여 개발 내용을 통합합니다.
 프로젝트를 진행하면서 기능 추가, 오류 수정, 데이터 관리, 테스트 작성 및 문서 수정 등의 작업을 커밋으로 기록했습니다.
 
 ### Git 커밋 기록
