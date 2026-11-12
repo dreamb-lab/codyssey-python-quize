@@ -233,6 +233,8 @@ git log --oneline
 
 ![Git 커밋 기록](docs/screenshots/git_log.png)
 
+![브랜치 생성 및 병합 기록](docs/screenshots/git_branch_merge.png)
+
 ### Git 설정 화면
 
 ![Git 설정](docs/screenshots/git_settings.png)
