@@ -28,7 +28,7 @@ Python을 이용하여 터미널에서 실행할 수 있는 콘솔 기반 퀴즈
 Python 3.10 이상이 설치된 환경에서 프로젝트 폴더로 이동한 후 다음 명령어를 실행합니다.
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 ## 4. 주요 기능
@@ -178,7 +178,7 @@ JSON은 사람이 읽기 쉬운 데이터 형식이며, Python의 딕셔너리�
 테스트 실행 명령어:
 
 ```bash
-python -m unittest test_quiz.py
+python3 -m unittest test_quiz.py
 ```
 
 ## 11. 기능 수정 및 확장 시 파일별 역할
