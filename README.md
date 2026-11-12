@@ -276,3 +276,17 @@ Git 커밋 메시지는 변경한 작업의 목적을 간결하게 설명해야 
 - `Test: 퀴즈 정답 확인 테스트 추가`
 
 커밋 메시지를 통해 어떤 작업이 변경되었는지 쉽게 확인할 수 있습니다.
+
+## 15. Git Clone 및 Pull 실습 증거
+
+### Git Clone 확인
+
+GitHub 원격 저장소를 로컬 컴퓨터에 복제하고 저장소 연결 상태를 확인했습니다.
+
+![Git Clone 실습](docs/screenshots/git_clone.png)
+
+### Git Pull 확인
+
+원격 저장소에 업데이트된 README 파일을 로컬 복제본으로 가져왔습니다.
+
+![Git Pull 실습](docs/screenshots/git_pull.png)
